@@ -1,5 +1,6 @@
-.banner-wrap{
-    height: 100vh;
+
+.banner-wrap img{
+    max-width: 100%;
 }
 .slick-slider.banner{
     margin-top:calc(var(--header-height) - 3px) ;
@@ -29,6 +30,9 @@
 }
 .content-accessories{
     margin-top: 30px;
+}
+.accessories-wrap{
+    max-width: 50%;
 }
 .accessories-wrap,.shop-wrap{
     padding: 0;
