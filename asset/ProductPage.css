@@ -13,9 +13,13 @@
 .link-list li:last-child{
     color: #ccc;
 }
-.link-list li:last-child::before{
+
+.link-list li::before{
     color: #ccc;
     content: "/\00a0"
+}
+.link-list li:first-child:before{
+  content: "";
 }
 .body-product{
     margin-top: 30px;
