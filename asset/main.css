@@ -124,3 +124,18 @@ input:focus{
     border: none;
     background-color: transparent;
 }
+.paginate{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.6rem;
+}
+.paginate span{
+    cursor: pointer;
+    padding: 4px 13px;
+}
+.paginate span.active{
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+}
