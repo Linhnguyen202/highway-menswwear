@@ -20,7 +20,7 @@
 .slick-dots button{
     background-color: #eee;
     font-size: 0;
-    padding: 6px;
+    padding: 3px;
     border-radius: 100%;
     border: none;
     outline: none;
@@ -30,9 +30,6 @@
 }
 .content-accessories{
     margin-top: 30px;
-}
-.accessories-wrap{
-    max-width: 50%;
 }
 .accessories-wrap,.shop-wrap{
     padding: 0;
@@ -50,6 +47,7 @@
 .accessories-name h3{
     font-size: 1.5rem;
     font-weight: 700;
+    color: white;
 }
 .content-new,.content-shop,.feed-header{
     margin-top: 50px;
@@ -177,6 +175,7 @@
 }
 .instagram-wrap:hover .instagram-box{
     opacity: 1;
+    z-index: 100;
 }
 .instagram-box button{
     border: 1px solid var(--white-color);
@@ -184,5 +183,14 @@
     background-color: transparent;
     font-size: 1.4rem;
     color: var(--white-color);
-    z-index: 5;
+    z-index: 10;
+}
+.auto-slider .slick-track{
+    gap: 10px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
 }

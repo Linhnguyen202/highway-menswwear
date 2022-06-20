@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../asset/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./asset/main.css">
-    <link rel="stylesheet" href="./asset/style.css">
-    <link rel="stylesheet" href="./asset/responsive.css">
-    <link rel="stylesheet" href="./asset/Header.css">
-    <link rel="stylesheet" href="./asset/Footer.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../asset/responsive.css">
+    <link rel="stylesheet" href="../asset/Header.css">
+    <link rel="stylesheet" href="../asset/ProductPage.css">
+    <link rel="stylesheet" href="../asset/Blog.css">
+    <link rel="stylesheet" href="../asset/Footer.css">
+    <link rel="stylesheet" href="../asset/story.css">
+    
 </head>
 <body>
     <div class="overlay"></div>
@@ -190,10 +192,10 @@
     <header class="header-responsive header-pos">
         <div class="container-fluid header-wrap">
             <div class="header-smaller">
-                <div class="btn-header-responsive menu">
+                <div class="btn-header-responsive">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                <div class="btn-header-responsive search">
+                <div class="btn-header-responsive">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
@@ -201,16 +203,16 @@
                 <h3>Menu</h3>
                 <ul class="header-list-smaller">
                     <li class="header-item-smaller">
-                        <div id="menu-response-btn-1" class="flex">
-                             <a class="header-link-smaller" href="./productsPage.html">SALE</a>
+                        <div class="flex">
+                             <a class="header-link-smaller" href="">SALE</a>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <div id="second-menu-smaller-1" class="second-menu-smaller">
-                            <div id="menu-response-btn-2"  class="flex">
+                        <div class="second-menu-smaller">
+                            <div class="flex">
                                 <span>See All</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div  id="second-menu-smaller-2" class="second-menu-smaller">
+                            <div class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Up to 299.000 vnd</a>
@@ -228,16 +230,16 @@
                         
                     </li>
                     <li class="header-item-smaller">
-                        <div id="menu-response-btn-1" class="flex">
-                             <a class="header-link-smaller" href="./productsPage.html">SẢN PHẨM</a>
+                        <div class="flex">
+                             <a class="header-link-smaller" href="">SẢN PHẨM</a>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <div id="second-menu-smaller-1"  class="second-menu-smaller">
-                            <div id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
+                        <div class="second-menu-smaller">
+                            <div class="flex" style="margin-top: 5px;">
                                 <span>Đặc biết</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div  id="second-menu-smaller-2" class="second-menu-smaller">
+                            <div class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Hàng Mới</a>
@@ -247,11 +249,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div  id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
+                            <div class="flex" style="margin-top: 5px;">
                                 <span>Trang phục</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div id="second-menu-smaller-2" class="second-menu-smaller">
+                            <div class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Áo Phông</a>
@@ -288,11 +290,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
+                            <div class="flex" style="margin-top: 5px;">
                                 <span>Giày & Phụ Kiện</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div id="second-menu-smaller-2" class="second-menu-smaller">
+                            <div class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Giày</a>
@@ -317,11 +319,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
+                            <div class="flex" style="margin-top: 5px;">
                                 <span>Dòng sản phẩm</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div id="second-menu-smaller-2" class="second-menu-smaller">
+                            <div class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Essential</a>
@@ -368,297 +370,77 @@
             </div>
         </div>
     </header>
-   
-    <div class="banner">
-        <div class="banner-wrap">
-            <img src="https://mcdn.nhanh.vn/store3/105877/bn/HW_BANNERWEB__1_.jpg" alt="" width="100%">
-        </div>
-        <div class="banner-wrap">
-            <img src="https://mcdn.nhanh.vn/store3/105877/bn/Banner_Website_1.jpg" alt="" width="100%">
-        </div>
-        <div class="banner-wrap">
-            <img src="https://mcdn.nhanh.vn/store3/105877/bn/271984205_457647192697920_4013484975870758619_n.jpg" alt="" width="100%">
-        </div>
-        
-    </div >
-
-    <div class="content-accessories">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="accessories-wrap col-md-6 col-sm-12">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/159019325_1881692711986996_1375505509539543465_n.jpg" alt="">
-                    <div class="accessories-name  text-hover">
-                        <a href="./productsPage.html">
-                            <h3>Thắt Lưng</h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="accessories-wrap col-md-6 col-sm-12">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/279451710_524851739310798_6060352611151897747_n.jpg" alt="">
-                    <div class="accessories-name text-hover">
-                        <a href="./productsPage.html">
-                            <h3>Giày</h3>
-                        </a>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="link-header">
+        <ul class="link-list">
+            <li>Trang chủ</li>
+            <li>Tin Tức</li>
+            <li>Chính sách khách hàng</li>
+        </ul>
     </div>
-
-    <div class="content-new">
-        <div class="container-fluid">
-            <div class="new-header">
-                <h3>Sản phẩm mới</h3>
-                <a href="">Xem thêm</a>
-            </div>
-            <div class="row  auto-slider">
-                <div class="col-md-3 col-sm-4 product-card">
-                        <div class="product-img">
-                            <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220516/HW08052222084.jpg" alt="">
-                            <div class="swatch-img">
-                                <div class="swatch-img_wrap">
-                                     <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220516/HW08052222084.jpg" alt="">
-                                </div>
-                               
-                            </div>
-                        </div> 
-                        <div class="product-content">
-                            <span>Essential</span>
-                            <h3>Polo Ruben - Relaxed fit - Xanh</h3>
-                            <span>480,000 ₫</span>
-                        </div>
-                </div>
-                <div class=" col-md-3 col-sm-4 product-card ">
-                        <div class="product-img">
-                            <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220512/HW08052221705.jpg" alt="">
-                            <div class="swatch-img">
-                                <div class="swatch-img_wrap">
-                                     <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220516/HW08052222084.jpg" alt="">
-                                </div>
-                            </div>
-                        </div> 
-                       
-                        <div class="product-content">
-                            <span>Essential</span>
-                            <h3>Polo Ruben - Relaxed fit - Xanh</h3>
-                            <span>480,000 ₫</span>
-                        </div>
-                </div>
-                <div class="col-md-3 col-sm-4 product-card ">
-                        <div class="product-img">
-                            <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220420/_MG_5584.jpg" alt="">
-                            <div class="swatch-img">
-                                <div class="swatch-img_wrap">
-                                     <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220516/HW08052222084.jpg" alt="">
-                                </div>
-                            </div>
-                        </div> 
-                       
-                        <div class="product-content">
-                            <span>Essential</span>
-                            <h3>Polo Ruben - Relaxed fit - Xanh</h3>
-                            <span>480,000 ₫</span>
-                        </div>
-                </div>
-                <div class="col-md-3 col-sm-4 product-card ">
-                        <div class="product-img">
-                            <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220328/HWHA19950.jpg" alt="">
-                            <div class="swatch-img">
-                                <div class="swatch-img_wrap">
-                                     <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220516/HW08052222084.jpg" alt="">
-                                </div>              
-                            </div>
-                        </div> 
-                       
-                        <div class="product-content">
-                            <span>Essential</span>
-                            <h3>Polo Ruben - Relaxed fit - Xanh</h3>
-                            <span>480,000 ₫</span>
-                        </div>
-                </div>
-                <div class="col-md-3 col-sm-4 product-card">
-                    <div class="product-img">
-                        <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220516/HW08052222084.jpg" alt="">
-                        <div class="swatch-img">
-                            <div class="swatch-img_wrap">
-                                 <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220516/HW08052222084.jpg" alt="">
-                            </div>
-                           
-                        </div>
-                    </div> 
-                    <div class="product-content">
-                        <span>Essential</span>
-                        <h3>Polo Ruben - Relaxed fit - Xanh</h3>
-                        <span>480,000 ₫</span>
-                    </div>
-            </div>
-            </div>
-            
-        </div>
-    </div>
-    <div class="content-shop">
-        <div class="container-fluid">
-            <div class="shop-header">
-                    <h3>Store</h3>
-                    <a href="">Xem thêm</a>
-            </div>
-            <div class="shop-slider">
-                <div class="row">
-                   <div class="col-xl-6 shop-wrap">
-                        <img src="https://mcdn.nhanh.vn/store3/105877/bn/255568116_2070525419770390_9061088011580212710_n.jpg" alt="">
-                        <div class="shop-content">
-                            <h3 class="text-hover">109 Lò Đúc - Hà Nội</h3>
-                            <div class="box-overlay"></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 shop-wrap">
-                        <img src="https://mcdn.nhanh.vn/store3/105877/bn/web2.png" alt="">
-                        <div class="shop-content">
-                            <h3 class="text-hover">66 Lê Thị Riêng - HCM</h3>
-                            <div class="box-overlay"></div>
-                        </div>
+    <div class="container-story">
+        <div class="row">
+            <div class="col-xs-12 col-md-12W">
+                <div class="story-header">
+                    <h3>CHÍNH SÁCH KHÁCH HÀNG</h3>
+                    <div class="header-time">
+                        <div class="line"></div>
+                        <span class="time">20/09/2021</span>
+                        <div class="line"></div>
                     </div>
                 </div>
-            </div>
-            
-        </div>
-    </div>
-    <div class="shop-feed">
-        <div class="container-fluid">
-            <div class="feed-header">
-                <h3>Tin Tức</h3>
-                <a href="">Xem thêm</a>
-            </div>
-            <div class="row feed-slider"  data-slick='{"slidesToShow": 2, "slidesToScroll": 1}'>
-                <div class="col-xl-6 shop-wrap">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/Artboard_3.jpg" alt="">
-                    <div class="shop-content">
-                        <a href="./aboutDetailPage/HighwayStory.html">
-                            <h3 class="text-hover">QUẦN VẢI HỢP VỚI NHỮNG DÁNG GIÀY NÀO</h3>
-                        </a>
-                      
-                        <div class="box-overlay"></div>
-                    </div>
+                <div class="story-image">
+                    <img src="https://mcdn.nhanh.vn/store3/105877/art/HW-campaign-40.jpg" alt="">
                 </div>
-                <div class="col-xl-6 shop-wrap" dir="rtl">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/Artboard_6.jpg" alt="">
-                        <div class="shop-content"><a href="">
-                            <a href="./aboutDetailPage/HighwayStory.html">
-                                <h3 class="text-hover" >NGÀNH IN ẤN TRONG THỜI TRANG ĐƯỢC PHÁT TRIỂN NHƯ THẾ NÀO</h3>
-                            </a>
-                          
-                        </a>
-                        <div class="box-overlay"></div>
+                <div class="story-content">
+                   <h2>1. QUY TẮC TÍCH ĐIỂM.</h2>
+                   <ul>
+                        <li>
+                            Điểm tích lũy sẽ được chúng tôi quy đổi như sau:
+                        </li>
+                        <br>
+                        <p>
+                            Mua hàng: 10.000 VNĐ = 1 điểm
+                        </p>
+                        <p>
+                            Số điểm được sử dụng để quy đổi sang các hạng mức thẻ, 
+                            không có giá trị quy đổi thành tiền mặt & không được trừ vào các hóa đơn mua hàng.
+                        </p>
+                   </ul>
+                   <h2>2. CÁC QUYỀN LỢI CÁC HẠNG THẺ TẠI HIGHWAY.</h2>
+                   <img src="https://mcdn.nhanh.vn/store3/105877/artCT/91945/91945_1650281972_chinh%20sach%20khach%20hang%202022-02%20(1).png" alt="">
+                   <h2>3. CÁCH KIỂM TRA HẠNG THẺ VÀ ĐIỂM TÍCH LŨY.</h2>
+                   <ul>
+                        <li>Khách hàng cung cấp số điện thoại để các bạn nhân viên tại cửa hàng hoặc Online hỗ trợ kiểm tra trên hệ thống.</li>
+                        <li>Kiểm tra qua tài khoản Website:</li>
+                    </ul>
+                    <br>
+                    <p><strong>Bước 1:</strong>  Đăng nhập tài khoản trên Website.</p>
+                    <p><strong>Bước 2:</strong> Click chọn Profile trên thanh Header.</p>
+                    <br>
+                    <p>
+                        Tại đây Highway Menswear sẽ cung cấp cho bạn các thông tin cơ bản về tài khoản:
+                    </p>
+                    <div style="margin-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+                        <p>Tên</p>
+                        <p>Số điện thoại</p>
+                        <p>Ngày, tháng, năm sinh</p>
+                        <p>Số tiền đã chi tiêu</p>
+                        <p>Số điểm tích lũy</p>
                     </div>
-                </div>
-                <div class="col-xl-6 shop-wrap">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/Artboard_2.jpg" alt="">
-                    <div class="shop-content">
-                        <a href="./aboutDetailPage/HighwayStory.html">
-                            <h3 class="text-hover">NHỮNG CÁCH PHỐI ĐỒ VỚI SƠ MI CUBAN MÙA HÈ</h3>
-                        </a>
-                        <div class="box-overlay"></div>
+                    <div style="text-align: center;">
+                        <strong>Mong rằng bạn sẽ có những trải nghiệm mua sắm tuyệt vời tại Highway Menswear.</strong>
+                        <strong>Cảm ơn bạn đã luôn ủng hộ chúng tôi!
+    
+                        </strong>
                     </div>
-                </div>
-                <div class="col-xl-6 shop-wrap">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/Artboard_4.jpg" alt="">
-                    <div class="shop-content">
-                        <a href="./aboutDetailPage/HighwayStory.html">
-                            <h3 class="text-hover">NHỮNG BỘ PHIM BẠN NÊN XEM ĐỂ MẶC ĐẸP NHƯ SAO</h3>
-                        </a>
+                   
                     
-                        <div class="box-overlay"></div>
-                    </div>
-                </div>
-            </div>
-           
-        </div>
-    </div>
-    <div class="content-instagram">
-        <div class="container-fluid">
-            <div class="feed-header">
-                <h3>Instagram</h3>
-                <a href="">Xem thêm</a>
-            </div>
-            <div class="row insta-slider">
-                <div class="col-xl-2 instagram-wrap">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/test2__31_.jpg" alt="">
-                    <div class="instagram-box">
-                        <a href="./productsPage.html">
-                            <button class="">Shop Now</button>
-                        </a>
-                       
-                        <div class="box-overlay"></div>
-                    </div>
-                </div>
-                <div class="col-xl-2 instagram-wrap">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/4.JPEG" alt="">
-                    <div class="instagram-box">
-                        <a href="./productsPage.html">
-                            <button class="">Shop Now</button>
-                        </a>
-                        <div class="box-overlay"></div>
-                    </div>
-                </div>
-                <div class="col-xl-2 instagram-wrap">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/IMG_4408 (1).JPG" alt="">
-                    <div class="instagram-box">
-                        <a href="./productsPage.html">
-                            <button class="">Shop Now</button>
-                        </a>
-                        <div class="box-overlay"></div>
-                    </div>
-                </div>
-                <div class="col-xl-2 instagram-wrap">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/IMG_7369.JPG" alt="">
-                    <div class="instagram-box">
-                        <a href="./productsPage.html">
-                            <button class="">Shop Now</button>
-                        </a>
-                        <div class="box-overlay"></div>
-                    </div>
-                </div>
-                <div class="col-xl-2 instagram-wrap">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/IMG_6285.JPG" alt="">
-                    <div class="instagram-box">
-                        <a href="./productsPage.html">
-                            <button class="">Shop Now</button>
-                        </a>
-                        <div class="box-overlay"></div>
-                    </div>
-                </div>
-                <div class="col-xl-2 instagram-wrap">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/IMG_4190.png" alt="">
-                    <div class="instagram-box">
-                        <a href="./productsPage.html">
-                            <button class="">Shop Now</button>
-                        </a>
-                        <div class="box-overlay"></div>
-                    </div>
-                </div>
-                <div class="col-xl-2 instagram-wrap">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/12__1_.jpg" alt="">
-                    <div class="instagram-box">
-                        <a href="./productsPage.html">
-                            <button class="">Shop Now</button>
-                        </a>
-                        <div class="box-overlay"></div>
-                    </div>
-                </div>
-                <div class="col-xl-2 instagram-wrap">
-                    <img src="https://mcdn.nhanh.vn/store3/105877/bn/imagerepost__15_.jpg" alt="">
-                    <div class="instagram-box">
-                        <a href="./productsPage.html">
-                            <button class="">Shop Now</button>
-                        </a>
-                        <div class="box-overlay"></div>
-                    </div>
                 </div>
             </div>
         </div>
+      
     </div>
-    <div class="footer">
+     <div class="footer"> 
         <div class="container-fluid footer-container">
             <div class="row">
                 <div class="img-box">
@@ -666,7 +448,7 @@
                 </div>
             </div>
             <div class="row footer-content_box">
-                <div class="col-md-3 col-sm-12 footer-contact">
+                <div class="col-xl-3 footer-contact">
                     <div>
                         <h3>ĐĂNG KÝ ĐỂ NHẬN ƯU ĐÃI</h3>
                         <div class="input-footer">
@@ -676,7 +458,7 @@
                         <span>Bản Quyền thuộc về HighWay Menswear</span>
                     </div>
                 </div>
-                <div class="col-md-2 col-6  about-footer">
+                <div class=" col about-footer">
                     <div>
                         <h3>VỀ CHÚNG TÔI</h3>
                         <ul>
@@ -687,7 +469,7 @@
                     </div>
                     
                 </div>
-                <div class="col-md-2 col-6 about-footer">
+                <div class="col about-footer">
                     <div>
                         <h3>DỊCH VỤ KHÁCH HÀNG</h3>
                         <ul>
@@ -701,7 +483,7 @@
                     </div>
                    
                 </div>
-                <div class="col-md-2 col-6 about-footer">
+                <div class="col about-footer">
                     <div>
                         <h3>HỆ THỐNG CỬA HÀNG</h3>
                         <ul>
@@ -713,7 +495,7 @@
                     </div>
                    
                 </div>
-                <div class="col-md-2 col-6 about-footer">
+                <div class="col about-footer">
                     <div>
                         <h3>FANPAGE</h3>
                         <ul>
@@ -727,27 +509,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-
-
-
-
-
-    <script
-    type="text/javascript"
-    src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-    type="text/javascript"
-    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="./js/slick.js"></script>
-    <script src="./index.js"></script>
 </body>
-
 </html>

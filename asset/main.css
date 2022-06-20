@@ -38,6 +38,13 @@ ul{
 div{
     margin: 0;
 }
+.container-story{
+    max-width: 650px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
 input:focus{
     outline: none;
 }
@@ -48,6 +55,17 @@ input:focus{
     z-index: 100;
     height: var(--header-height);
 }
+@media only screen and (min-width: 889px){
+    .overlay.show{
+        display: none;
+
+    }
+} 
+@media only screen and (max-width: 888px){
+    .overlay.show{
+        display: block;
+    }
+}
 .overlay{
     display: none;
     background-color: var(--black-color);
@@ -55,12 +73,14 @@ input:focus{
     position: fixed;
     inset: 0;
     z-index: 5;
+    transition: all 0.4s linear;
 }
 .box-overlay{
     position: absolute;
     background-color: #000;
     opacity: 0.5;
     inset: 0;
+    z-index: -1;
 }
 .flex{
     display: flex;
@@ -100,6 +120,12 @@ input:focus{
      width: 70%;
      background-color: var(--white-color);
      transform: translateX(-100%);
+     opacity: 0;
+     transition:transform 0.2s linear,opacity 0.2s linear;
+}
+.box-search.active{
+    transform: translateX(0);
+    opacity: 1;
 }
 .box-search h3{
     font-size: 1.6rem;
