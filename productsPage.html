@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./asset/responsive.css">
     <link rel="stylesheet" href="./asset/style.css">
     <link rel="stylesheet" href="./asset/Header.css">
+    <link rel="stylesheet" href="./asset/Footer.css">
     <link rel="stylesheet" href="./asset/ProductPage.css">
     <title>Document</title>
 </head>
@@ -56,10 +57,10 @@
                         
                     </li>
                     <li class="header-list-item">
-                        <a href="#" class="header-list-link">Hàng mới</a>
+                        <a href="./productsPage.html" class="header-list-link">Hàng mới</a>
                     </li>
                     <li class="header-list-item">
-                        <a href="#" class="header-list-link text-hover">Sản phẩm</a>
+                        <a href="./productsPage.html" class="header-list-link text-hover">Sản phẩm</a>
                         <div class="second-wrap ">
                             <ul class="second-list row">
                                 <li class="second-list-item col-xl-2">
@@ -165,12 +166,14 @@
                 </ul>
             </div>
            <div class="logo">
-               <img src="https://mcdn.nhanh.vn/store3/105877/logo_1630246666_banner highway.png" alt="">
+                <a href="/index.html">
+                    <img src="https://mcdn.nhanh.vn/store3/105877/logo_1630246666_banner highway.png" alt="">
+                </a>
            </div>
             <div class="header-right">
                 <ul class="header-list">
                     <li class="header-list-item">
-                        <a href="#" class="header-list-link">Tin tức</a>
+                        <a href="./blog.html" class="header-list-link">Tin tức</a>
                     </li>
                     <li class="header-list-item">
                         <a href="#" class="header-list-link">Đăng nhập</a>
@@ -188,10 +191,10 @@
     <header class="header-responsive header-pos">
         <div class="container-fluid header-wrap">
             <div class="header-smaller">
-                <div class="btn-header-responsive">
+                <div class="btn-header-responsive menu">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                <div class="btn-header-responsive">
+                <div class="btn-header-responsive search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
@@ -199,16 +202,16 @@
                 <h3>Menu</h3>
                 <ul class="header-list-smaller">
                     <li class="header-item-smaller">
-                        <div class="flex">
-                             <a class="header-link-smaller" href="">SALE</a>
+                        <div id="menu-response-btn-1" class="flex">
+                             <a class="header-link-smaller" href="./productsPage.html">SALE</a>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <div class="second-menu-smaller">
-                            <div class="flex">
+                        <div id="second-menu-smaller-1" class="second-menu-smaller">
+                            <div id="menu-response-btn-2"  class="flex">
                                 <span>See All</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div class="second-menu-smaller">
+                            <div  id="second-menu-smaller-2" class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Up to 299.000 vnd</a>
@@ -226,16 +229,16 @@
                         
                     </li>
                     <li class="header-item-smaller">
-                        <div class="flex">
-                            <a class="header-link-smaller" href="">SẢN PHẨM</a>
+                        <div id="menu-response-btn-1" class="flex">
+                             <a class="header-link-smaller" href="./productsPage.html">SẢN PHẨM</a>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <div class="second-menu-smaller">
-                            <div class="flex" style="margin-top: 5px;">
+                        <div id="second-menu-smaller-1"  class="second-menu-smaller">
+                            <div id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
                                 <span>Đặc biết</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div class="second-menu-smaller">
+                            <div  id="second-menu-smaller-2" class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Hàng Mới</a>
@@ -245,11 +248,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="flex" style="margin-top: 5px;">
+                            <div  id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
                                 <span>Trang phục</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div class="second-menu-smaller">
+                            <div id="second-menu-smaller-2" class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Áo Phông</a>
@@ -286,11 +289,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="flex" style="margin-top: 5px;">
+                            <div id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
                                 <span>Giày & Phụ Kiện</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div class="second-menu-smaller">
+                            <div id="second-menu-smaller-2" class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Giày</a>
@@ -315,11 +318,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="flex" style="margin-top: 5px;">
+                            <div id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
                                 <span>Dòng sản phẩm</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div class="second-menu-smaller">
+                            <div id="second-menu-smaller-2" class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Essential</a>
@@ -351,7 +354,10 @@
                 </ul>
             </div>
             <div class="logo">
-                <img src="https://mcdn.nhanh.vn/store3/105877/logo_1630246666_banner highway.png" alt="">
+                <a href="/index.html">
+                    <img src="https://mcdn.nhanh.vn/store3/105877/logo_1630246666_banner highway.png" alt="">
+                </a>
+                
             </div>
             <div class="header-smaller">
                 <div class="btn-header-responsive">
@@ -378,18 +384,18 @@
                             <h3>SHOP</h3>
                             <ul>
                                 <li >
-                                    <div class="flex">
+                                    <div class="flex" id="menu-response-btn-1">
                                         <a>Trang Phuc</a>
                                         <i class="fa-solid fa-chevron-down"></i>
                                     </div>
-                                    <div class="second-menu-smaller">
+                                    <div id="second-menu-smaller-1" class="second-menu-smaller">
                                         <ul class="menu-list-smaller">
                                             <li class="menu-item-smaller">
-                                                <div class="flex">
+                                                <div class="flex" id="menu-response-btn-2">
                                                     <a>Áo</a>
                                                     <i class="fa-solid fa-chevron-down"></i>
                                                 </div>
-                                                <div class="second-menu-smaller">
+                                                <div  id="second-menu-smaller-2" class="second-menu-smaller">
                                                     <ul class="menu-list-smaller">
                                                         <li class="menu-item-smaller">
                                                             <a class="menu-link-smaller" href="">Áo Len</a>
@@ -417,11 +423,11 @@
                                                 </div>
                                             </li>
                                             <li class="menu-item-smaller">
-                                                <div class="flex">
+                                                <div class="flex" id="menu-response-btn-2">
                                                     <a>Quần</a>
                                                     <i class="fa-solid fa-chevron-down"></i>
                                                 </div>
-                                                <div class="second-menu-smaller">
+                                                <div  id="second-menu-smaller-2" class="second-menu-smaller">
                                                     <ul class="menu-list-smaller">
                                                         <li class="menu-item-smaller">
                                                             <a class="menu-link-smaller" href="">Quần jeans</a>
@@ -439,11 +445,11 @@
                                     </div>
                                 </li>
                                 <li >
-                                    <div class="flex">
+                                    <div class="flex" id="menu-response-btn-1">
                                         <a>Giày& Phụ kiện</a>
                                         <i class="fa-solid fa-chevron-down"></i>
                                     </div>
-                                    <div class="second-menu-smaller">
+                                    <div  id="second-menu-smaller-1" class="second-menu-smaller">
                                         <ul class="menu-list-smaller">
                                             <li class="menu-item-smaller">
                                                 <a class="menu-link-smaller" href="">Balo</a>
@@ -519,10 +525,10 @@
                             <div class="col-xl-3 col-sm-6 col-xs-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220328/HWHA19950.jpg" alt="">
+                                        <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220614/HWHA0093_copy.jpg" alt="">
                                         <div class="swatch-img">
                                             <div class="swatch-img_wrap">
-                                                 <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220516/HW08052222084.jpg" alt="">
+                                                 <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220614/HWHA0093_copy.jpg" alt="">
                                             </div>              
                                         </div>
                                     </div> 
@@ -537,10 +543,10 @@
                             <div class="col-xl-3 col-sm-6 col-xs-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220328/HWHA19950.jpg" alt="">
+                                        <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220614/HWHA0204_copy.jpg" alt="">
                                         <div class="swatch-img">
                                             <div class="swatch-img_wrap">
-                                                 <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220516/HW08052222084.jpg" alt="">
+                                                 <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220614/HWHA0204_copy.jpg" alt="">
                                             </div>              
                                         </div>
                                     </div> 
@@ -555,10 +561,10 @@
                             <div class="col-xl-3 col-sm-6 col-xs-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220328/HWHA19950.jpg" alt="">
+                                        <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220614/HWHA0726_copy.jpg" alt="">
                                         <div class="swatch-img">
                                             <div class="swatch-img_wrap">
-                                                 <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220516/HW08052222084.jpg" alt="">
+                                                 <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220614/HWHA0726_copy.jpg" alt="">
                                             </div>              
                                         </div>
                                     </div> 
@@ -573,10 +579,28 @@
                             <div class="col-xl-3 col-sm-6 col-xs-6">
                                 <div class="product-card">
                                     <div class="product-img">
-                                        <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220328/HWHA19950.jpg" alt="">
+                                        <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220524/HW08052221625.jpg" alt="">
                                         <div class="swatch-img">
                                             <div class="swatch-img_wrap">
-                                                 <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220516/HW08052222084.jpg" alt="">
+                                                 <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220524/HW08052221625.jpg" alt="">
+                                            </div>              
+                                        </div>
+                                    </div> 
+                                   
+                                    <div class="product-content">
+                                        <span>Essential</span>
+                                        <h3>Polo Ruben - Relaxed fit - Xanh</h3>
+                                        <span>480,000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6 col-xs-6">
+                                <div class="product-card">
+                                    <div class="product-img">
+                                        <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220614/HWHA0657_copy.jpg" alt="">
+                                        <div class="swatch-img">
+                                            <div class="swatch-img_wrap">
+                                                 <img src="https://mcdn.nhanh.vn/store3/105877/ps/20220614/HWHA0657_copy.jpg" alt="">
                                             </div>              
                                         </div>
                                     </div> 
@@ -589,10 +613,88 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="paginate">
+                            <span><i class="fa-solid fa-angle-left"></i></span>
+                            <span>1</span>
+                            <span>2</span>
+                            <span>...</span>
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="footer">
+        <div class="container-fluid footer-container">
+            <div class="row">
+                <div class="img-box">
+                    <img src="https://mcdn.nhanh.vn/store3/105877/logo_1630246666_banner%20highway.png" class="footer-img" alt="" width="30%">
+                </div>
+            </div>
+            <div class="row footer-content_box">
+                <div class="col-md-3 col-sm-12 footer-contact">
+                    <div>
+                        <h3>ĐĂNG KÝ ĐỂ NHẬN ƯU ĐÃI</h3>
+                        <div class="input-footer">
+                            <input type="text" placeholder="Điền địa chỉ Email của bạn">
+                            <button>Gửi</button>
+                        </div>
+                        <span>Bản Quyền thuộc về HighWay Menswear</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6  about-footer">
+                    <div>
+                        <h3>VỀ CHÚNG TÔI</h3>
+                        <ul>
+                            <li ><a class="text-hover" href="">Giới thiệu</a></li>
+                            <li ><a class="text-hover" href="">Tuyển dụng</a></li>
+                            <li ><a class="text-hover" href="">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="col-md-2 col-6 about-footer">
+                    <div>
+                        <h3>DỊCH VỤ KHÁCH HÀNG</h3>
+                        <ul>
+                            <li ><a class="text-hover" href="">Highway's VIP club</a></li>
+                            <li ><a class="text-hover" href="">Hướng dẫn mua hàng</a></li>
+                            <li ><a class="text-hover" href="">Chính sách bảo hành</a></li>
+                            <li ><a class="text-hover" href="">Chính sách đổi trả</a></li>
+                            <li ><a class="text-hover" href="">Chính sách bảo mật </a></li>
+                            <li ><a class="text-hover" href="">Hotline khiếu nại</a></li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                <div class="col-md-2 col-6 about-footer">
+                    <div>
+                        <h3>HỆ THỐNG CỬA HÀNG</h3>
+                        <ul>
+                            <li ><a class="text-hover" href="">1. 100 Đông Các, Quận Đống Đa, Hà Nội</a></li>
+                            <li ><a class="text-hover" href="">2. 109 Lò Đúc, Quận Hai Bà Trưng, Hà Nội</a></li>
+                            <li ><a class="text-hover" href="">3. 367 Lê Văn Sỹ, Phường 12, Quận 3, Hồ Chí Minh</a></li>
+                            <li ><a class="text-hover" href="">4. 66 Lê Thị Riêng, Bến Thành, Quận 1, Hồ Chí Minh</a></li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                <div class="col-md-2 col-6 about-footer">
+                    <div>
+                        <h3>FANPAGE</h3>
+                        <ul>
+                            <li ><a class="text-hover" href="">Facebook</a></li>
+                            <li ><a class="text-hover" href="">Instagram</a></li>
+                            <li ><a class="text-hover" href="">Tiktok</a></li>
+                            <li ><a class="text-hover" href="">Youtube</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./index.js"></script>
 </html>

@@ -129,14 +129,21 @@
 .header-menu-responsive
 {
     transform: translateX(-100%);
+    opacity: 0;
     z-index: 100;
    padding: 40px 40px;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    width: 40%;
+    width: 60%;
     background-color: var(--white-color);
+    transition:transform 0.2s linear,opacity 0.2s linear;
+}
+.header-menu-responsive.active
+{
+    transform: translateX(0);
+    opacity: 1;
 }
 .header-list-smaller{
     margin-top: 30px;
@@ -160,6 +167,12 @@
     visibility: hidden;
     overflow: hidden;
     opacity: 0; 
+}
+.second-menu-smaller.active{
+    display: block;
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1; 
 }
 .menu-list-smaller{
     margin-top: 10px;
