@@ -31,8 +31,6 @@ MenuResBtn1.forEach((item,index)=>{
     })
 })
 const MenuResBtn2 = document.querySelectorAll('#menu-response-btn-2')
-console.log(MenuResBtn2)
-
 const MenuHead2 = document.querySelectorAll('#second-menu-smaller-2')
 console.log(MenuHead2)
 MenuResBtn2.forEach((item,index)=>{
@@ -45,4 +43,24 @@ MenuResBtn2.forEach((item,index)=>{
         }
        
     })
+})
+
+
+// Open modal signIn
+const ModalSignIN = document.querySelector('.form-signin');
+const signInForm = document.querySelector('#sign-in_form')
+const signUpForm = document.querySelector('#sign-up_form')
+const SignUpBtn = document.querySelector('#sign-btn')
+const OpenFormBtn = document.querySelector('#btn-open-form')
+const overlayForm = document.querySelector('.overlay-white')
+SignUpBtn.addEventListener('click',()=>{
+    signInForm.classList.remove('active')
+    signUpForm.classList.add('active')
+})
+overlayForm.addEventListener('click',()=>{
+    ModalSignIN.classList.remove('active')
+})
+OpenFormBtn.addEventListener('click',(e)=>{
+    e.preventDefault()
+    ModalSignIN.classList.add('active')
 })

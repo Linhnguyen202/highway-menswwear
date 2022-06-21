@@ -16,10 +16,88 @@
     <link rel="stylesheet" href="./asset/responsive.css">
     <link rel="stylesheet" href="./asset/Header.css">
     <link rel="stylesheet" href="./asset/Footer.css">
+    <link rel="stylesheet" href="./asset/signIn.css">
     <title>Document</title>
 </head>
 <body>
     <div class="overlay"></div>
+    <div class="form-signin">
+        <div class="overlay-white"></div>
+        <div class="modal-signIn">
+            <div id="sign-in_form" class="row sign-in  active ">
+                <div class="col-md-6 form-submit">
+                    <h3>Đăng nhập</h3>
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Điền Địa chỉ Email của bạn">
+                        <div class="line"></div>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Mật khẩu">
+                        <div class="line"></div>
+                    </div>
+                    <div class="forget-btn">
+                        <a href="">Quên mật khẩu ?</a>
+                    </div>
+                    
+                    <button class="btn-submit text-hover">Đăng nhập</button>
+                </div>
+                <div class="col-md-6 form-submit">
+                    <h3>Khách hàng Mới</h3>
+                    <p>
+                        Chỉ một vài bước đơn giản đăng ký bạn sẽ nhận được những quyền lợi đặc biệt sau từ Highway Menswear:
+                    </p>
+                    <br>
+                    <p>
+                        - Đặt hàng thuận tiện và nhanh chóng.
+                    </p>
+                    <br>
+                    <p>
+                        - Tra cứu lịch sử mua hàng và số điểm tích luỹ.
+                    </p>
+                    <p>
+                        - Nhận các thông tin về sản phẩm và khuyến mãi đặc biệt.  
+                    </p>
+                    <button id="sign-btn" class="btn-submit text-hover">Đăng Ký</button>
+                </div>
+            </div>
+            <div id="sign-up_form" class="row sign-up form-submit">        
+                    <h3>Đăng ký</h3>
+                    <span>Vui lòng điền đầy đủ các trường thông tin ở bên dưới để tạo tài khoản mới.</span>
+                    <span>Những trường thông tin có dấu "*" là bắt buộc!</span>
+                    <div class="row">
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Họ và Tên">
+                            <div class="line"></div>
+                        </div>
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Số Điện Thoại">
+                            <div class="line"></div>
+                        </div>
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Điền địa chỉ Email">
+                            <div class="line"></div>
+                        </div>
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Ngày Sinh">
+                            <div class="line"></div>
+                        </div>
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Mật Khẩu">
+                            <div class="line"></div>
+                        </div>
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Địa Chỉ">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div style="display:flex;justify-content:flex-end">
+                        <button id="sign-up" class="btn-submit text-hover">Đăng nhập</button> 
+                    </div>
+                   
+            </div>
+        </div>
+
+    </div>
     <div class="box-search">
         <h3>Search</h3>
         <div class="search-wrap">
@@ -175,7 +253,7 @@
                         <a href="./blog.html" class="header-list-link">Tin tức</a>
                     </li>
                     <li class="header-list-item">
-                        <a href="#" class="header-list-link">Đăng nhập</a>
+                        <a href="#" id="btn-open-form" class="header-list-link">Đăng nhập</a>
                     </li>
                     <li class="header-list-item">
                         <a href="#" class="header-list-link">Giỏ hàng</a>

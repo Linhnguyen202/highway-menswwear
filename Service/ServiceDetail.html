@@ -18,10 +18,88 @@
     <link rel="stylesheet" href="../asset/Blog.css">
     <link rel="stylesheet" href="../asset/Footer.css">
     <link rel="stylesheet" href="../asset/story.css">
+    <link rel="stylesheet" href="../asset/signIn.css">
     
 </head>
 <body>
     <div class="overlay"></div>
+    <div class="form-signin">
+        <div class="overlay-white"></div>
+        <div class="modal-signIn">
+            <div id="sign-in_form" class="row sign-in  active ">
+                <div class="col-md-6 form-submit">
+                    <h3>Đăng nhập</h3>
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Điền Địa chỉ Email của bạn">
+                        <div class="line"></div>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Mật khẩu">
+                        <div class="line"></div>
+                    </div>
+                    <div class="forget-btn">
+                        <a href="">Quên mật khẩu ?</a>
+                    </div>
+                    
+                    <button class="btn-submit text-hover">Đăng nhập</button>
+                </div>
+                <div class="col-md-6 form-submit">
+                    <h3>Khách hàng Mới</h3>
+                    <p>
+                        Chỉ một vài bước đơn giản đăng ký bạn sẽ nhận được những quyền lợi đặc biệt sau từ Highway Menswear:
+                    </p>
+                    <br>
+                    <p>
+                        - Đặt hàng thuận tiện và nhanh chóng.
+                    </p>
+                    <br>
+                    <p>
+                        - Tra cứu lịch sử mua hàng và số điểm tích luỹ.
+                    </p>
+                    <p>
+                        - Nhận các thông tin về sản phẩm và khuyến mãi đặc biệt.  
+                    </p>
+                    <button id="sign-btn" class="btn-submit text-hover">Đăng Ký</button>
+                </div>
+            </div>
+            <div id="sign-up_form" class="row sign-up form-submit">        
+                    <h3>Đăng ký</h3>
+                    <span>Vui lòng điền đầy đủ các trường thông tin ở bên dưới để tạo tài khoản mới.</span>
+                    <span>Những trường thông tin có dấu "*" là bắt buộc!</span>
+                    <div class="row">
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Họ và Tên">
+                            <div class="line"></div>
+                        </div>
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Số Điện Thoại">
+                            <div class="line"></div>
+                        </div>
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Điền địa chỉ Email">
+                            <div class="line"></div>
+                        </div>
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Ngày Sinh">
+                            <div class="line"></div>
+                        </div>
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Mật Khẩu">
+                            <div class="line"></div>
+                        </div>
+                        <div style="width:50%" class="input-wrap col-md-6">
+                            <input type="text" placeholder="*Địa Chỉ">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div style="display:flex;justify-content:flex-end">
+                        <button id="sign-up" class="btn-submit text-hover">Đăng nhập</button> 
+                    </div>
+                   
+            </div>
+        </div>
+
+    </div>
     <div class="box-search">
         <h3>Search</h3>
         <div class="search-wrap">
@@ -58,10 +136,10 @@
                         
                     </li>
                     <li class="header-list-item">
-                        <a href="./productsPage.html" class="header-list-link">Hàng mới</a>
+                        <a href="../productsPage.html" class="header-list-link">Hàng mới</a>
                     </li>
                     <li class="header-list-item">
-                        <a href="./productsPage.html" class="header-list-link text-hover">Sản phẩm</a>
+                        <a href="../productsPage.html" class="header-list-link text-hover">Sản phẩm</a>
                         <div class="second-wrap ">
                             <ul class="second-list row">
                                 <li class="second-list-item col-xl-2">
@@ -177,7 +255,7 @@
                         <a href="./blog.html" class="header-list-link">Tin tức</a>
                     </li>
                     <li class="header-list-item">
-                        <a href="#" class="header-list-link">Đăng nhập</a>
+                        <a href="#" id="btn-open-form" class="header-list-link">Đăng nhập</a>
                     </li>
                     <li class="header-list-item">
                         <a href="#" class="header-list-link">Giỏ hàng</a>
@@ -192,10 +270,10 @@
     <header class="header-responsive header-pos">
         <div class="container-fluid header-wrap">
             <div class="header-smaller">
-                <div class="btn-header-responsive">
+                <div class="btn-header-responsive menu">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                <div class="btn-header-responsive">
+                <div class="btn-header-responsive search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
@@ -203,16 +281,16 @@
                 <h3>Menu</h3>
                 <ul class="header-list-smaller">
                     <li class="header-item-smaller">
-                        <div class="flex">
-                             <a class="header-link-smaller" href="">SALE</a>
+                        <div id="menu-response-btn-1" class="flex">
+                             <a class="header-link-smaller" href="./productsPage.html">SALE</a>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <div class="second-menu-smaller">
-                            <div class="flex">
+                        <div id="second-menu-smaller-1" class="second-menu-smaller">
+                            <div id="menu-response-btn-2"  class="flex">
                                 <span>See All</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div class="second-menu-smaller">
+                            <div  id="second-menu-smaller-2" class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Up to 299.000 vnd</a>
@@ -230,16 +308,16 @@
                         
                     </li>
                     <li class="header-item-smaller">
-                        <div class="flex">
-                             <a class="header-link-smaller" href="">SẢN PHẨM</a>
+                        <div id="menu-response-btn-1" class="flex">
+                             <a class="header-link-smaller" href="./productsPage.html">SẢN PHẨM</a>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <div class="second-menu-smaller">
-                            <div class="flex" style="margin-top: 5px;">
+                        <div id="second-menu-smaller-1"  class="second-menu-smaller">
+                            <div id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
                                 <span>Đặc biết</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div class="second-menu-smaller">
+                            <div  id="second-menu-smaller-2" class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Hàng Mới</a>
@@ -249,11 +327,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="flex" style="margin-top: 5px;">
+                            <div  id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
                                 <span>Trang phục</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div class="second-menu-smaller">
+                            <div id="second-menu-smaller-2" class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Áo Phông</a>
@@ -290,11 +368,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="flex" style="margin-top: 5px;">
+                            <div id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
                                 <span>Giày & Phụ Kiện</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div class="second-menu-smaller">
+                            <div id="second-menu-smaller-2" class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Giày</a>
@@ -319,11 +397,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="flex" style="margin-top: 5px;">
+                            <div id="menu-response-btn-2" class="flex" style="margin-top: 5px;">
                                 <span>Dòng sản phẩm</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <div class="second-menu-smaller">
+                            <div id="second-menu-smaller-2" class="second-menu-smaller">
                                 <ul class="menu-list-smaller">
                                     <li class="menu-item-smaller">
                                         <a class="menu-link-smaller" href="">Essential</a>
@@ -440,7 +518,7 @@
         </div>
       
     </div>
-     <div class="footer"> 
+    <div class="footer">
         <div class="container-fluid footer-container">
             <div class="row">
                 <div class="img-box">
@@ -448,7 +526,7 @@
                 </div>
             </div>
             <div class="row footer-content_box">
-                <div class="col-xl-3 footer-contact">
+                <div class="col-md-3 col-sm-12 footer-contact">
                     <div>
                         <h3>ĐĂNG KÝ ĐỂ NHẬN ƯU ĐÃI</h3>
                         <div class="input-footer">
@@ -458,7 +536,7 @@
                         <span>Bản Quyền thuộc về HighWay Menswear</span>
                     </div>
                 </div>
-                <div class=" col about-footer">
+                <div class="col-md-2 col-6  about-footer">
                     <div>
                         <h3>VỀ CHÚNG TÔI</h3>
                         <ul>
@@ -469,7 +547,7 @@
                     </div>
                     
                 </div>
-                <div class="col about-footer">
+                <div class="col-md-2 col-6 about-footer">
                     <div>
                         <h3>DỊCH VỤ KHÁCH HÀNG</h3>
                         <ul>
@@ -483,7 +561,7 @@
                     </div>
                    
                 </div>
-                <div class="col about-footer">
+                <div class="col-md-2 col-6 about-footer">
                     <div>
                         <h3>HỆ THỐNG CỬA HÀNG</h3>
                         <ul>
@@ -495,7 +573,7 @@
                     </div>
                    
                 </div>
-                <div class="col about-footer">
+                <div class="col-md-2 col-6 about-footer">
                     <div>
                         <h3>FANPAGE</h3>
                         <ul>
@@ -509,7 +587,8 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 </body>
+<script src="../index.js"></script>
 </html>
